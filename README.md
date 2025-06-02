@@ -29,8 +29,8 @@ User Input → Preference Extraction → Contextual Questions → Final Mapping 
 
 ### 1. Clone the Repository
 ```bash
-git clone vibe-sahion-bot
-cd vibe-sahion-bot
+git clone git@github.com:swapnilsaxena11/vibe-fashion-bot.git
+cd vibe-fashion-bot
 ```
 
 ### 2. Install Dependencies
