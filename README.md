@@ -29,8 +29,8 @@ User Input → Preference Extraction → Contextual Questions → Final Mapping 
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repo-url>
-cd fashion-chatbot-rag
+git clone vibe-sahion-bot
+cd vibe-sahion-bot
 ```
 
 ### 2. Install Dependencies
@@ -79,21 +79,18 @@ D002,Ripple Linen dress,dress,XS-S-M-L,Relaxed,Linen,Sleeveless,Seafoam green,Va
 
 ### 1. Initialize the System
 ```python
-python fashion_chatbot.py
+python fash_vibey.py
 ```
 
-### 2. Load Your Product Catalog
-```
-Choose option 3: "Initialize RAG search with CSV"
-Enter path to your products CSV: /path/to/your/products.csv
+
 ```
 
-### 3. Start a Conversation
+### 2. Start a Conversation
 ```
 Choose option 1: "Start new conversation"
 ```
 
-### 4. Example Conversation Flow
+### 3. Example Conversation Flow
 ```
 Welcome to fashVibey! Tell me about your style vibe...
 
@@ -174,21 +171,6 @@ self.model = SentenceTransformer('all-MiniLM-L6-v2')  # Try 'all-mpnet-base-v2' 
 - "Casual" → relaxed fits
 - "Brunch" → smart-casual, comfortable styles
 - "Beach" → flowy, light colors
-
-## 📁 Project Structure
-
-```
-fashion-chatbot-rag/
-│
-├── fashion_chatbot.py          # Main application file
-├── requirements.txt            # Python dependencies  
-├── README.md                  # This file
-├── sample_products.csv        # Sample product data
-└── examples/
-    ├── conversation_flow.md   # Example conversations
-    └── csv_format.md         # CSV format guide
-```
-
 ## 🔍 Troubleshooting
 
 ### Common Issues
@@ -233,11 +215,6 @@ class UserPreference(BaseModel):
     sustainability: Optional[bool] = None
     # ... existing fields
 ```
-
-### Multi-Language Support
-Modify the system prompts for different languages:
-```python
-system_prompt = f"""Tu es fashVibey, un consultant en mode IA amical..."""  # French example
 ```
 
 ### Custom Scoring
